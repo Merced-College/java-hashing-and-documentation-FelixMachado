@@ -1,4 +1,4 @@
-package hashingAndDocumentation;//comment this out if you do not need a package
+//package hashingAndDocumentation;//comment this out if you do not need a package Commeneted this out unless you use it in eclipse
 
 import java.io.BufferedReader;
 import java.io.FileReader;
