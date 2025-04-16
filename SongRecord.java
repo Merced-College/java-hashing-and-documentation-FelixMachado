@@ -95,7 +95,7 @@ public class SongRecord {
     /**
     * Getters and setters for each field are used to retreive data
     * from CSV file and returns various instance variables
-    * that the SongProgram class displays
+    * that the SongProgram class displays.
     */
 
     public double getValence() { return valence; }
