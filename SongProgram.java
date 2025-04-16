@@ -13,6 +13,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
+
+/** SongProgram.java
+* @author Felix Oliveira-Machado
+* @Since April 8 2025
+* This Class loads stored song data from a csv file and lets you search for songs
+* by using a HashMap provides a main2 for the purpose of using a graphical user interface
+*
+*
+*
+*/
+
+
+
 public class SongProgram {
 
     // HashMap to store SongRecords with the song's ID as the key
@@ -22,8 +35,15 @@ public class SongProgram {
     public SongProgram() {
         songMap = new HashMap<>();
     }
-
-    // Method to load songs from a CSV file
+    
+    /**
+    * Method to load songs from a CSV file to add to the hash map
+    *
+    * @param filepath The path to the CSV file conating the data for the song
+    *
+    *
+    */
+    
     public void loadSongsFromCSV(String filePath) {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
@@ -44,10 +64,23 @@ public class SongProgram {
         }
     }
 
+    /**
+    * This Method returns a SongRecord by its unique ID.
+    * @param id The unique song ID to search for.
+    * @return The SongRecord if found, or null if not found
+    */
+
+    
+
     // Method to retrieve a SongRecord by ID
     public SongRecord getSongById(String id) {
         return songMap.get(id);
     }
+    
+    /**
+    * This Method is used to print out all of the songs currently stored in the song map.
+    * It's used to see if the file is being read and properly mapped
+    */
 
     // Method to print all songs (for debugging or display purposes)
     public void printAllSongs() {
@@ -56,7 +89,12 @@ public class SongProgram {
         }
     }
     
-    // GUI method to search for a song by ID
+    /** 
+    * GUI method to search for a song by ID
+    * by allwoing a user to search for song by ID
+    * then once it's found it displays the songs information
+    */
+
     public void openSearchGui() {
         // Create the main frame
         JFrame frame = new JFrame("Song Lookup");
@@ -102,7 +140,13 @@ public class SongProgram {
         frame.setVisible(true);
     }
 
-    // Main method to demonstrate functionality and open GUI
+        
+    /**
+    * This Main2 method is used when a GUI is being used.
+    * The intent is that you remove the 2 from Main and 
+    * comment out the current Main inorder of this code to be able
+    * to demonstarte song loading, searching, and printing.
+    */
     public static void main2(String[] args) {
         SongProgram program = new SongProgram();
 
