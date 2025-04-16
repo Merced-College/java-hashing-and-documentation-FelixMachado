@@ -18,7 +18,7 @@ import java.util.HashMap;
 * @author Felix Oliveira-Machado
 * @Since April 8 2025
 * This Class loads stored song data from a csv file and lets you search for songs
-* by using a HashMap provides a main2 for the purpose of using a graphical user interface
+* by using a HashMap provides a main2 for the purpose of using a graphical user interface.
 *
 *
 *
