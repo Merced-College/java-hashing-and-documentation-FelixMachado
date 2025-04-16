@@ -3,6 +3,18 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.Objects;
 
+/** SongProgram.java
+* @author Felix Oliveira-Machado
+* @Since April 8 2025
+* This Class loads data from the CSV file inorder to create individual infor for each of the songs
+*  this class is then accessed by the SongProgram class to display the name, ID artist, album, etc.
+*
+*
+*
+*/
+
+
+
 public class SongRecord {
     // Instance variables
     private double valence;
@@ -80,7 +92,12 @@ public class SongRecord {
         
     }
 
-    // Getters and setters for each field
+    /**
+    * Getters and setters for each field are used to retreive data
+    * from CSV file and returns various instance variables
+    * that the SongProgram class displays
+    */
+
     public double getValence() { return valence; }
     public void setValence(double valence) { this.valence = valence; }
 
