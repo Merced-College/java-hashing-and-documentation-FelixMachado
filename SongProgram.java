@@ -115,7 +115,9 @@ public class SongProgram {
         panel.add(idField);
         panel.add(searchButton);
 
-        // Result area to display song details
+        /**
+        * Result area is used to display song details in the GUI.
+        */
         JTextArea resultArea = new JTextArea(5, 30);
         resultArea.setEditable(false);
         JScrollPane scrollPane = new JScrollPane(resultArea);
